@@ -1,0 +1,62 @@
+{
+    "user_id": "1023227402854427776",
+    "name": "Arnold",
+    "personal_info": {
+        "name": "a_teacher",
+        "firstname": "Arnold",
+        "lastname": "Tester",
+        "is_verified": true,
+        "remaining_verification_attempts": 5,
+        "is_verification_info_confirmed": false,
+        "display_blocked_message": false
+    },
+    "roles": [
+        "system.Everyone",
+        "system.Authenticated",
+        "r:authorized",
+        "r:teacher",
+        "s:testing"
+    ],
+    "api_version": "v1.0",
+    "system": "EN_test",
+    "settings": {
+        "appid_android": false,
+        "appid_ios": false,
+        "archiveS3Prefix": "loc",
+        "country_code": "US",
+        "date_format": "MM/DD/YYYY",
+        "db_collection_aggregates": "keyvalue",
+        "db_collection_event": "event_EN_test",
+        "default_content_locale": "en_US",
+        "event_storage": "mongo",
+        "google_maps_api_key": "",
+        "interactive_whiteboard_url": null,
+        "language_code": "en",
+        "logLevel": "trace",
+        "logout_url": "/app/login.html?system=EN_test",
+        "primary_event_log": "MongoEventLog",
+        "resume_series_days": "90",
+        "review_series_days": "90",
+        "school_year": false,
+        "school_year_aggregator_reset": false,
+        "school_year_reset_coins_stars": true,
+        "school_year_reset_kgaps": true,
+        "secondary_event_log": "DynamoDbEventLog",
+        "short_login_url": false,
+        "time_format": "12h H:mm am/pm",
+        "timezone": "US/Eastern",
+        "ucm_trial_period_days": "56",
+        "update_aggregates": true,
+        "user_submission_store": "dynamo",
+        "week_starts_on": "Sunday",
+        "worksheet_folders_limit": 10,
+        "worksheets_per_folder_limit": 10
+    },
+    "personal_settings": {
+        "rankingWidget": "all"
+    },
+    "features": {
+        "manageWorksheets": true,
+        "worksheets": true
+    }
+}

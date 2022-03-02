@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html ng-controller="AppCtrl" id="ng-app" class="bettermarks bettermarks-app">
+<head>
+    <title translate="{{ ::appTitle }}"></title>
+    <meta charset="utf-8"/>
+    <meta name="theme-color" content="#07B">
+    <meta property="og:title" content="bettermarks"/>
+    <meta property="og:type" content="website"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+    <script type="text/javascript">var vrs = '2202221127';</script>
+
+    <style>
+        body {
+            display: none;
+        }
+    </style>
+
+    
+    <meta system-css file="assets/bettermarks-center.css" />
+    
+    <meta system-css file="assets/bettermarks-systems.css" />
+    
+
+</head>
+
+<body class="teacher" ng-class="systemCss">
+
+<div id="container" ng-class="containerClasses" ui-view="root">
+    <div id="partner-menu" ng-hide="inAppMode"></div>
+
+    <div bm-header ng-if="showMenu"></div>
+
+    <div ng-if="toggles.debug" class="debug-box" style="display: none;">
+        <pre>{{ debug | json}}</pre>
+    </div>
+    <!-- MAIN -VIEW-->
+    <div id="content-header" bm-content-header ng-if="contentHeader" config="contentHeader"></div>
+    <div ui-view="main" id="content-container"></div>
+    <div id="footer" ng-controller="FooterCtrl" ng-show="footerLinks.length">
+
+        <!-- Footer Links -->
+        <a ng-repeat="fl in footerLinks"
+           class="pointer footer-item footer-item-left"
+           ng-class="fl.css"
+           translate="{{ fl.text }}"
+           ng-href="{{ fl.href }}"
+           target="{{ fl.target }}"
+           open-popup="{{ fl.popup }}"
+           in-app-link="{{ fl.inAppLink }}"
+        ></a>
+        <a ng-show="showSupportPhone">
+            <span class="fa fa-phone"></span>
+            <span ng-show="isLargeScreen">+49 30 300 244 003</span>
+        </a>
+        <span bm-feature="showCopyright" class="copyright" translate="jsapp.general.footer.copyright"></span>
+    </div>
+</div>
+<!-- /container -->
+<div id="pending-request-spinner" ng-show="pendingRequests"><i class="fa fa-spinner fa-spin"></i></div>
+<div id="flexClientWrap" flex-client-exercise style="display: none;width:100%;height:99.5%"></div>
+<div id="seriesPlayerWrap" series-player-exercise style="display: none;width:100%;height:100%; background: white;"></div>
+
+<system-js system-js-system="systemsModule" system-js-file="src/common/systemsModule/systems.js"></system-js>
+
+<system-js system-js-system="systemsModule" system-js-file="src/common/systemsModule/systemsDirective.js"></system-js>
+
+<system-js system-js-system="DE_hhn" system-js-file="src/systems/DE_hhn/system.js"></system-js>
+
+<system-js system-js-system="EN_macmillancie" system-js-file="src/systems/EN_macmillancie/system.js"></system-js>
+
+<system-js system-js-system="ES_edelvives_pilot" system-js-file="src/systems/ES_edelvives_pilot/system.js"></system-js>
+
+<system-js system-js-system="UK_harpercollins" system-js-file="src/systems/UK_harpercollins/system.js"></system-js>
+
+
+<script type="text/javascript" src="vendor/json2/json2.js"></script>
+
+<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript" src="vendor/jquery.browser/dist/jquery.browser.min.js"></script>
+
+<script type="text/javascript" src="vendor/jquery-ui/ui/minified/datepicker.min.js"></script>
+
+<script type="text/javascript" src="vendor/es5-shim/es5-shim.min.js"></script>
+
+<script type="text/javascript" src="vendor/es5-shim/es5-sham.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular/angular.js"></script>
+
+<script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-cookies/angular-cookies.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-translate/angular-translate.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-touch/angular-touch.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-animate/angular-animate.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-local-storage/dist/angular-local-storage.min.js"></script>
+
+<script type="text/javascript" src="vendor/bucky/bucky.min.js"></script>
+
+<script type="text/javascript" src="vendor/lrInfiniteScroll/lrInfiniteScroll.js"></script>
+
+<script type="text/javascript" src="vendor/oclazyload/dist/ocLazyLoad.min.js"></script>
+
+<script type="text/javascript" src="vendor/jquery-ui/ui/minified/core.min.js"></script>
+
+<script type="text/javascript" src="vendor/jquery-ui/ui/minified/widget.min.js"></script>
+
+<script type="text/javascript" src="vendor/jquery-ui/ui/minified/mouse.min.js"></script>
+
+<script type="text/javascript" src="vendor/jquery-ui/ui/minified/sortable.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+
+<script type="text/javascript" src="vendor/angular-ui-bootstrap/src/dateparser/dateparser.js"></script>
+
+<script type="text/javascript" src="vendor/angular-ui-bootstrap/src/datepicker/datepicker.js"></script>
+
+<script type="text/javascript" src="vendor/angular-ui/build/angular-ui.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-ui-sortable/sortable.js"></script>
+
+<script type="text/javascript" src="vendor/angular-google-chart/ng-google-chart.js"></script>
+
+<script type="text/javascript" src="vendor/angular-slugify/angular-slugify.js"></script>
+
+<script type="text/javascript" src="vendor/ui-router-extras/release/ct-ui-router-extras.min.js"></script>
+
+<script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+<script type="text/javascript" src="src/io9.webview.js"></script>
+
+<script type="text/javascript" src="src/module/api/api.config.js"></script>
+
+<script type="text/javascript" src="src/module/api/api.service.js"></script>
+
+<script type="text/javascript" src="src/module/auth/auth.0config.js"></script>
+
+<script type="text/javascript" src="src/module/auth/auth.authorize.btn.js"></script>
+
+<script type="text/javascript" src="src/module/auth/auth.authorize.js"></script>
+
+<script type="text/javascript" src="src/module/auth/auth.feature.js"></script>
+
+<script type="text/javascript" src="src/module/auth/auth.service.js"></script>
+
+<script type="text/javascript" src="src/module/group/group.config.js"></script>
+
+<script type="text/javascript" src="src/module/group/group.controller.js"></script>
+
+<script type="text/javascript" src="src/module/group/group.service.js"></script>
+
+<script type="text/javascript" src="src/module/logout/logout.js"></script>
+
+<script type="text/javascript" src="src/module/mobile/mobile.config.js"></script>
+
+<script type="text/javascript" src="src/module/mobile/mobile.directive.js"></script>
+
+<script type="text/javascript" src="src/module/mobile/mobile.service.js"></script>
+
+<script type="text/javascript" src="src/module/navigation/navigation.config.js"></script>
+
+<script type="text/javascript" src="src/module/navigation/navigation.controller.js"></script>
+
+<script type="text/javascript" src="src/module/navigation/navigation.directive.js"></script>
+
+<script type="text/javascript" src="src/module/navigation/navigation.service.js"></script>
+
+<script type="text/javascript" src="src/module/search/search.config.js"></script>
+
+<script type="text/javascript" src="src/module/search/search.searchbar.js"></script>
+
+<script type="text/javascript" src="src/module/util/util.filter.js"></script>
+
+<script type="text/javascript" src="src/module/util/util.time.js"></script>
+
+<script type="text/javascript" src="src/app/center/app.js"></script>
+
+<script type="text/javascript" src="src/app/center/appBootstrap.js"></script>
+
+<script type="text/javascript" src="src/app/center/appConfig.js"></script>
+
+<script type="text/javascript" src="src/app/center/appController.js"></script>
+
+<script type="text/javascript" src="src/app/center/teacher/teacher.js"></script>
+
+<script type="text/javascript" src="src/app/center/teacher/teacherController.js"></script>
+
+<script type="text/javascript" src="src/common/accessService/accessService.js"></script>
+
+<script type="text/javascript" src="src/common/directives/lightbox.js"></script>
+
+<script type="text/javascript" src="src/common/directives/worksheetListItem.js"></script>
+
+<script type="text/javascript" src="src/common/factories/appFactories.js"></script>
+
+<script type="text/javascript" src="src/common/filter/filter.js"></script>
+
+<script type="text/javascript" src="src/common/modalBubbleModule/modalBubble.js"></script>
+
+<script type="text/javascript" src="src/common/resizerService/resizerService.js"></script>
+
+<script type="text/javascript" src="src/common/staticContentModule/staticContentService.js"></script>
+
+<script type="text/javascript" src="src/common/storageService/storageService.js"></script>
+
+<script type="text/javascript" src="src/common/systemsModule/systems.js"></script>
+
+<script type="text/javascript" src="src/common/systemsModule/systemsDirective.js"></script>
+
+<script type="text/javascript" src="src/common/userService/userService.js"></script>
+
+<script type="text/javascript" src="src/common/worksheetModule/worksheet.js"></script>
+
+<script type="text/javascript" src="src/common/worksheetModule/worksheetDirective.js"></script>
+
+<script type="text/javascript" src="src/common/worksheetModule/worksheetFolderService.js"></script>
+
+<script type="text/javascript" src="src/common/worksheetModule/worksheetService.js"></script>
+
+<script type="text/javascript" src="templates-common.js"></script>
+
+<script type="text/javascript" src="templates-module.js"></script>
+
+<script type="text/javascript" src="templates-center-app.js"></script>
+
+
+<mathjax-script></mathjax-script>
+<rum-configure></rum-configure>
+<rum-page-performance type="index"></rum-page-performance>
+</body>
+</html>

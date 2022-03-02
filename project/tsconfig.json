@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": false, // 163 cases
+    "esModuleInterop": true,
+    // Because this is the way that Babel transpiles
+    // https://iamturns.com/typescript-babel/
+    "isolatedModules": true,
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    // Do not check type declaration files in node_modules
+    // https://www.typescriptlang.org/tsconfig#skipLibCheck
+    "skipLibCheck": true,
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    // included global types
+    "types": ["jest"],
+    // only lookup this specific folder for types,
+    // no parent folders
+    // https://www.typescriptlang.org/tsconfig#typeRoots
+    "typeRoots": ["./node_modules/@types/"],
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules", "cypress"]
+}

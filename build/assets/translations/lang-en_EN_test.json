@@ -1,0 +1,1470 @@
+{
+    "jsapp": {
+        "datepicker": {
+            "monthNames": {
+                "february": "February", 
+                "october": "October", 
+                "march": "March", 
+                "august": "August", 
+                "september": "September", 
+                "may": "May", 
+                "january": "January", 
+                "june": "June", 
+                "april": "April", 
+                "december": "December", 
+                "july": "July", 
+                "november": "November"
+            }, 
+            "dateRange": {
+                "header": "Start/end", 
+                "headerLeft": "Select start date", 
+                "headerRight": "Select end date"
+            }, 
+            "dayNamesShort": {
+                "monday": "Mon", 
+                "tuesday": "Tue", 
+                "friday": "Fri", 
+                "wednesday": "Wed", 
+                "thursday": "Thu", 
+                "sunday": "Sun", 
+                "saturday": "Sat"
+            }, 
+            "dayNamesMin": {
+                "monday": "Mo", 
+                "tuesday": "Tu", 
+                "friday": "Fr", 
+                "wednesday": "We", 
+                "thursday": "Th", 
+                "sunday": "Su", 
+                "saturday": "Sa"
+            }, 
+            "time": "Time:", 
+            "dayNames": {
+                "monday": "Monday", 
+                "tuesday": "Tuesday", 
+                "friday": "Friday", 
+                "wednesday": "Wednesday", 
+                "thursday": "Thursday", 
+                "sunday": "Sunday", 
+                "saturday": "Saturday"
+            }, 
+            "monthNamesShort": {
+                "february": "Feb", 
+                "october": "Oct", 
+                "march": "Mar", 
+                "august": "Aug", 
+                "september": "Sep", 
+                "may": "May", 
+                "january": "Jan", 
+                "june": "Jun", 
+                "april": "Apr", 
+                "december": "Dec", 
+                "july": "Jul", 
+                "november": "Nov"
+            }
+        }, 
+        "folders": {
+            "notification": {
+                "rename": {
+                    "failure": "The folder could not be renamed.", 
+                    "success": "The folder has been renamed."
+                }, 
+                "create": {
+                    "failure": "Could not create folder.", 
+                    "success": "Folder was created succesfully."
+                }, 
+                "move": {
+                    "failure": "The worksheet {{worksheetName}} cannot be moved to the folder {{folderName}}.", 
+                    "success": "The worksheet \"{{worksheetName}}\" has been moved to folder \"{{folderName}}\"."
+                }, 
+                "delete": {
+                    "nonEmptyFolder": "This folder contains worksheets and cannot be deleted. Please move or delete the worksheets first.", 
+                    "success": "Folder deleted succesfully.", 
+                    "lastFolder": "This is the last folder and cannot be deleted."
+                }
+            }, 
+            "bubble": {
+                "deleteWarning": {
+                    "message": "The folder contains worksheets and cannot be deleted. Please move or delete the worksheets first.", 
+                    "title": "Delete folder"
+                }, 
+                "edit": {
+                    "button": "Save", 
+                    "message": "Edit the folder name:", 
+                    "title": "Rename"
+                }, 
+                "create": {
+                    "button": "Create folder", 
+                    "message": "Enter the folder name:", 
+                    "title": "Create a new folder"
+                }, 
+                "move": {
+                    "button": "Move to: {{folderName}}", 
+                    "title": "Move to a different folder"
+                }, 
+                "deleteConfirm": {
+                    "button": "Delete folder", 
+                    "message": "Are you sure you want to delete this folder?", 
+                    "title": "Delete folder"
+                }, 
+                "options": {
+                    "deleteFolder": "Delete folder", 
+                    "editFolder": "Rename", 
+                    "title": "Options"
+                }
+            }, 
+            "customWorksheetsTitle": "My Collection", 
+            "createNew": "New Folder"
+        }, 
+        "teacherSettings": {
+            "menu": {
+                "header": "Settings", 
+                "item": {
+                    "personalInfo": "Personal Information", 
+                    "password": "Password", 
+                    "email": "E-Mail"
+                }
+            }, 
+            "password": {
+                "errors": {
+                    "mismatch": "The passwords do not match."
+                }, 
+                "newPassword": "New Password", 
+                "passwordRepeat": "Re-enter New Password", 
+                "changePasswordDescription": "Please create your new password.\u00a0Start by entering your old password. <br />Your new password must contain at least 8 characters, an uppercase letter, a lowercase letter, a number and a symbol.", 
+                "oldPassword": "Old Password", 
+                "changePasswordConfirm": "OK", 
+                "changePassword": "Change password", 
+                "cancel": "Cancel", 
+                "changePasswordMessage": "The password has been successfully reset. For security reasons, we have sent an e-mail for confirmation."
+            }, 
+            "personalData": {
+                "save": "Save Changes"
+            }
+        }, 
+        "teacherVerification": {
+            "verification": {
+                "info": {
+                    "website": "Website:", 
+                    "phone": "Secretariat phone number:", 
+                    "email": "School email adress:"
+                }, 
+                "confirmation": {
+                    "text": "<text>We will e-mail your PIN to your school office as soon as possible.</text><br/><info>{{personalData}}</info><info>{{schoolName}}</info><info>{{address}}</info><info>{{location}}</info><info>{{country}}</info><spacious>{{websiteHeader}}</spacious><info>{{website}}</info><spacious>{{phoneHeader}}</spacious><info>{{phoneNumber}}</info><spacious>{{emailHeader}}</spacious><info>{{email}}</info>", 
+                    "button": {
+                        "edit": "Edit", 
+                        "confirm": "Request PIN"
+                    }
+                }, 
+                "title": "Activation", 
+                "button": {
+                    "confirm": "Confirm"
+                }, 
+                "proceedWithPIN": {
+                    "text": "<text>You have requested activation with the following information:</text><br/><info>{{personalData}}</info><info>{{schoolName}}</info><info>{{address}}</info><info>{{location}}</info><info>{{country}}</info><spacious>{{websiteHeader}}</spacious><info>{{website}}</info><spacious>{{phoneHeader}}</spacious><info>{{phoneNumber}}</info><spacious>{{emailHeader}}</spacious><info>{{email}}</info><br/><text>We will e-mail the school office as soon as possible and send your PIN there.</text>", 
+                    "button": {
+                        "confirm": "Enter PIN"
+                    }
+                }, 
+                "failure": {
+                    "text": "After 5 failed attempts, the PIN will be locked for security reasons. In order to request a new PIN please contact customer service at:", 
+                    "title": "Activation failed!"
+                }, 
+                "personalData": {
+                    "salutation": "Salutation", 
+                    "lastname": "Last Name", 
+                    "workTitle": "Title (optional)", 
+                    "firstname": "First Name (optional)", 
+                    "text": "Please complete and check your personal information."
+                }, 
+                "step2": {
+                    "name": "My School"
+                }, 
+                "step1": {
+                    "name": "Personal Information"
+                }, 
+                "step3": {
+                    "name": "Request PIN"
+                }
+            }, 
+            "school": { 
+                "form": {
+                    "field": {
+                        "website": "Website (optional)", 
+                        "city": "City", 
+                        "school": "School / Institution", 
+                        "country": "Country", 
+                        "zipCode": "Zip Code", 
+                        "phone": "School Office Telephone Nr. (optional)", 
+                        "state": "State", 
+                        "streetNumber": "Nr.", 
+                        "email": "School E-mail (optional)", 
+                        "streetName": "Street"
+                    }, 
+                    "backLinkText": "Return to Search Page", 
+                    "title": "Please provide your school's contact information:"
+                }
+            }, 
+            "teaser": {
+                "button": {
+                    "startVerification": "Begin Activation"
+                }, 
+                "second": {
+                    "text": "Every student answer will be automatically corrected. Your students will receive helpful feedback and you will receive a prepared overview of their results.", 
+                    "link": {
+                        "href": "#"
+                    }, 
+                    "title": "More helpful than just \u00abright\u00bb or \u00abwrong\u00bb"
+                }, 
+                "first": {
+                    "text": "You have more than 2,000 interactive exercises with more than 100,000 problems available.", 
+                    "link": {
+                        "text": "View instructions", 
+                        "href": "#"
+                    }, 
+                    "title": "Digital math book for your class"
+                }
+            }, 
+            "pin": {
+                "text": "Please enter the six-digit PIN that was sent to your school office.", 
+                "button": {
+                    "check": "Confirm PIN"
+                }, 
+                "title": "Activate", 
+                "error": {
+                    "mismatch": "You entered the wrong PIN. You have <strong>{{attemptsLeft}}</strong> attempts remaining."
+                }
+            }, 
+            "instructions": {
+                "text": "The security of your data and your students' data is very important to us. For this reason we ask you to verify that you are a teacher in order to activate your account.", 
+                "link": {
+                    "text": "", 
+                    "href": ""
+                }, 
+                "title": "Activate Teacher Account"
+            }
+        },
+        "collectUnfinishedTests": {
+            "notification": {
+                "success": "Success"
+            }, 
+            "button": {
+                "cancel": "Collect later", 
+                "collect": "Collect unfinished tests", 
+                "confirm": "Collect tests"
+            }, 
+            "inProgress": "The tests are being collected", 
+            "text": "Do you want to collect the tests? Once collected, no more test questions can be completed. \nIt will take a few minutes to collect the results from the tests that have not yet been submitted."
+        }, 
+        "general": {
+            "feedback": "Feedback", 
+            "noconnection": "No network connection", 
+            "close": "Close", 
+            "beforeunload": "Please confirm that you wish to leave this page - data you have entered may not be saved.", 
+            "system": {
+                "name": "wiskunde"
+            }, 
+            "participants": "Participants", 
+            "book": "Book:",
+            "couple": "Use the mobile app", 
+            "more": "more", 
+            "readMore": "Show more",
+            "appPopupClick": {
+                "noapp": {
+                    "text": "This feature is not available on tablets or smartphones.", 
+                    "button": "OK"
+                }
+            }, 
+            "datepickerPlaceholder": "Select the date", 
+            "logout": "Log out", 
+            "readLess": "Hide", 
+            "search": "Search", 
+            "activeStudents": "Active students", 
+            "backendError": "Error: could not load the content.", 
+            "footer": {
+                "termsandconditions": "Terms", 
+                "help": "Help", 
+                "imprint": "Imprint", 
+                "trial": "Kostenlos testen", 
+                "survey": {
+                    "link": "001", 
+                    "title": "Survey !"
+                }
+            }, 
+            "datefilter": {
+                "last14": "Last 14 days", 
+                "all": "All", 
+                "yesterday": "Since yesterday", 
+                "last30": "Last 30 days", 
+                "last7": "Last 7 days", 
+                "last90": "Last 90 days", 
+                "today": "Today"
+            }, 
+            "portalBacklink": "Leave the new version", 
+            "reload": "Reload", 
+            "browser": {
+            }
+        }, 
+        "copyIntoClipboard": "Select all", 
+        "tooltip": {
+            "downloadPdf": "Download", 
+            "play": "Start", 
+            "edit": "Edit", 
+            "view": "Preview", 
+            "export": "Export", 
+            "copy": "Copy", 
+            "delete": "Delete"
+        },
+        "teacher": {
+            "noDashboardDataHintSubInfo": "First navigate to \"Classes\", set up a new class and add students to it. Then you will be able to distribute books from the library, assign exercise series and evaluate your students' performance.", 
+            "groupManager": {
+                "passwords": {
+                    "header": "Change Passwords", 
+                    "instruction": "Change passwords for one ore more students from class \"{{className}}\":", 
+                    "doneButton": "Done", 
+                    "passwordButton": "Change password"
+                }, 
+                "removeMembers": {
+                    "confirmButton": "Remove selected  ({{count}})", 
+                    "cancelButton": "Abort", 
+                    "instruction": "Select one ore more students to remove from class \"{{className}}\":", 
+                    "header": "Remove Students"
+                }, 
+                "connectWithClass": {
+                    "classDisplayName": "{{className}} [{{schoolName}}]"
+                }, 
+                "noMembers": {
+                    "body": "Instruct your students ...", 
+                    "header": "Currently there are no students in this class."
+                }, 
+                "createNewClass": {
+                    "confirmButton": "Create new class", 
+                    "cancelButton": "Abort", 
+                    "instruction": "Enter a class name for a new class", 
+                    "label": "Class Name:", 
+                    "selectSchool": "Please select a school", 
+                    "header": "Create a new class", 
+                    "instructionSchool": "Select a school"
+                }, 
+                "notification": {
+                    "newClass": "You successfully created a new class \"{{className}}\".", 
+                    "disconnect": {
+                        "confirmButton": "Disconnect", 
+                        "cancelButton": "Abort", 
+                        "text": "Are you sure you want to disconnect with the current class \"{{className}}\"?", 
+                        "failed": "Disconnecting from class \"{{className}}\" has failed."
+                    }, 
+                    "disconnected": "You successfully disconnected with class \"{{className}}\".", 
+                    "connectWithClass": "You successfully connected to class \"{{className}}\".", 
+                    "createNewClass": "You successfully created a new class \"{{className}}\".", 
+                    "connectWithClasses": "You successfully connected to {{numClasses}} classes.", 
+                    "groupAlreadyExists": "A class with this name already exists. Please enter a new name.", 
+                    "removeMembers": "You successfully removed {{numMembers}} students.", 
+                    "editClass": "You successfully updated the name of the current class to \"{{className}}\"."
+                }, 
+                "groupSelector": {
+                    "students": "({{studentCount}} students)"
+                }, 
+                "actions": {
+                    "createNewClass": "Create new class", 
+                    "class": {
+                        "header": "Class Actions", 
+                        "changeName": "Change this class name", 
+                        "disconnect": "Disconnect class"
+                    }, 
+                    "connectWithClass": "Connect with class", 
+                    "student": {
+                        "header": "Student Actions", 
+                        "passwords": "Change password(s)", 
+                        "remove": "Remove student(s)"
+                    }
+                }, 
+                "noGroups": {
+                    "body": "Either connect with an existing class from your school or create a new class on your own using the options in the right toolbar.", 
+                    "header": "You have no class yet"
+                }, 
+                "groupMember": {
+                    "passwordButton": "Change password", 
+                    "passwordForm": {
+                        "setOwn": {
+                            "label": "The student should create their own password after they next log in."
+                        }, 
+                        "success": "The student's password has been changed successfully.", 
+                        "title": "Enter new password", 
+                        "passwordRepeat": {
+                            "placeholder": "Confirm new password"
+                        }, 
+                        "submit": {
+                            "label": "OK"
+                        }, 
+                        "password": {
+                            "required": "Please enter a password.", 
+                            "repeat": "Please repeat the password.", 
+                            "placeholder": "New password", 
+                            "pwlength": "The password must be at least 5 characters long."
+                        }
+                    }
+                }, 
+                "edit": {
+                    "backButton": "Classes"
+                }, 
+                "studentList": {
+                    "header": "Name"
+                }, 
+                "connect": {
+                    "alreadyConnected": "(already connected)", 
+                    "cancelButton": "Abort", 
+                    "instruction": "Select one or more classes from your school to connect:", 
+                    "header": "Connect to class", 
+                    "confirmButton": "Connect with selected ({{count}})"
+                }, 
+                "editClass": {
+                    "confirmButton": "Update class", 
+                    "cancelButton": "Abort", 
+                    "instruction": "Enter a new classname:", 
+                    "header": "Edit Class"
+                }
+            },
+            "downloadPopupFeedbackSend": "Send", 
+            "assignToDosSuccessful": "The exercises you selected are now assigned.", 
+            "noCurrentGroupToDos": "The selected class has no current assignments.", 
+            "noGroupBooks": "You have not yet distributed any books from your library to this class.", 
+            "noScheduledStudentToDos": "The selected student has no scheduled assignments.", 
+            "dueDate": "Due date", 
+            "noExpiredStudentToDos": "The selected student has no past assignments.", 
+            "noDashboardDataHint": "Welcome to your teacher centre!", 
+            "foldersLimitExceeded": "You have reached your folder limit. No new folder was created.", 
+            "noClass": "You have not yet added any classes.", 
+            "archive": {
+                "intro": "Here you can see the school year reports from the past school years of all your former classes.", 
+                "schoolyear": {
+                    "title": "Class reporting Summaries {{year}}"
+                }, 
+                "title": "Archive"
+            }, 
+            "downloadPopupFeedbackPlaceholder": "Can't find what you're looking for? Write to us and tell us what material you need.", 
+            "noStudentKnowledgeGaps": "No knowledge gaps have been identified for the selected student.", 
+            "noGroupsHint": "You have not yet added any classes or students<br/><br/>\nAdd classes and students in the class administration section.", 
+            "chooseStudents": "Students", 
+            "allParticipants": "All participants", 
+            "downloadPopupKEM": "Detailed explanation", 
+            "assignToDosLimitExceeded": "Exercise series cannot be assigned. You have reached the maximum number of opened and scheduled assignments allowed for this class.", 
+            "selectClass": "Class", 
+            "activeResults": "Average results across all active students", 
+            "buttons": {
+                "removeSubmitBook": "Remove", 
+                "deactivateResultsCancel": "Cancel", 
+                "releaseResultsSubmit": "Release", 
+                "removeBook": "Remove", 
+                "cancelRemoveBook": "Do not remove", 
+                "viewBook": "Open", 
+                "allocateBookPurchase": "Distribute", 
+                "previewBook": "Preview", 
+                "deleteTodoSubmit": "Delete", 
+                "allocateBook": "Hand out", 
+                "deactivateResultsSubmit": "Deactivate", 
+                "releaseResultsCancel": "Cancel", 
+                "deleteTodoCancel": "Do not delete"
+            }, 
+            "releaseResults": {
+                "text": "Are you sure you want to release the test results to your students?", 
+                "success": "The results have been released."
+            }, 
+            "playlist": {
+                "importTitle": "Import old worksheets", 
+                "importInfotext": "Select the exercises you would like to import. Deprecated  \nexercises which cannot be imported are market with {{ icon }}.", 
+                "missingExerciseSubtitle": "Removed {{ amount }} deprecated exercises.", 
+                "importButton": "Import selected ({{amount}}) "
+            }, 
+            "assignment": {
+                "hideResults": "Deactivate results", 
+                "emptyGroup": "You need at least one student in your class to make an assignment.", 
+                "students": {
+                    "button": {
+                        "hasSelectionAll": "Whole class ({{count}})", 
+                        "select": "Students", 
+                        "hasSelection": "Students ({{count}})"
+                    }
+                }, 
+                "deactivateResults": "Deactivate results.", 
+                "releaseResults": "Release results", 
+                "outdatedExercises": "Please remove the outdated exercises first.", 
+                "details": {
+                    "worksheet": {
+                        "test": "Test from worksheet", 
+                        "exercise": "Exercise from worksheet"
+                    }, 
+                    "startCode": "Start code:", 
+                    "selectedOptions": "Selected options:", 
+                    "options": {
+                        "popup": {
+                            "title": "Selected options"
+                        }
+                    }, 
+                    "period": "Assignment dates:"
+                }, 
+                "options": {
+                    "repeat": {
+                        "title": "Forbid retries", 
+                        "description": "If retries are forbidden, the students are only allowed to hand in the test once. However, before handing in the test, students can stop and continue the test within the given assignment dates.", 
+                        "hint": "Retries forbidden"
+                    }, 
+                    "helptools": {
+                        "title": "Deactivate tips and help", 
+                        "description": "Students will solve the exercises without any helping information.", 
+                        "hint": "Tips and help deactivated"
+                    }, 
+                    "calculator": {
+                        "title": "Allow calculator", 
+                        "description": "The students will have access to an online calculator while working on the exercise series.", 
+                        "hint": "Calculator allowed"
+                    }, 
+                    "results": {
+                        "title": "Deactivate results", 
+                        "description": "If the results are deactivated, the students will not see their results after handing in the test. Students will not see their results in the activity and assignment list either.", 
+                        "hint": "Results deactivated"
+                    }, 
+                    "details": {
+                        "close": "Fewer", 
+                        "open": "More"
+                    }, 
+                    "sameValues": {
+                        "title": "Same values for all students", 
+                        "description": "All students will receive identical exercises, using the same numbers when starting the exercise series (otherwise they will be assigned randomly).", 
+                        "hint": "Same values for all students"
+                    }, 
+                    "test": {
+                        "description": "When a worksheet is used as a test students solve the problems in any order, but they will not be given any tips or support. Tests can only be worked on between the starting date and the due date. A student\u2019s answers will only be checked once the test is handed in. Until that point, students can review their answers and change them if necessary (this does not apply to problems that involve multiple steps). \nYou can also use the following options:", 
+                        "title": "Test"
+                    }, 
+                    "startCode": {
+                        "title": "Protect with start code:", 
+                        "description": "If the test is protected with a start code, only authorized students (such as those in the classroom) can start the test. Therefore you need to give the students the code at the beginning of the test.", 
+                        "hint": "Protected with start code"
+                    }, 
+                    "exercise": {
+                        "description": "When a worksheet is used for practice, the students solve one task after another in a pre-determined order. Students get immediate feedback after every submission. They always get a second try and can repeat the exercise series as often as they want (even after the due date). \nFurthermore you have the following options:", 
+                        "title": "Practice"
+                    }
+                }
+            }, 
+            "worksheetPerFolderLimitExceeded": "You have already created the maximum number of allowable worksheets. The worksheet cannot be saved.", 
+            "noGroupToDos": "You do not have a class to which you can assign exercises.", 
+            "allStudents": "All students", 
+            "pleaseChooseGroup": "Class", 
+            "assignWorksheets": "Assign selection", 
+            "exercise": {
+                "start": "Show exercise", 
+                "preview": "Show preview"
+            }, 
+            "createClass": "Create classes in the class administration section.", 
+            "noTodoDetails": "No details available for the selected assignment yet.", 
+            "studentStartedSeries": "Started", 
+            "lastActivityDate": "Last activity on", 
+            "selectStudent": "Students", 
+            "noGroupBooksSubinfo": "Click on \"Library\" in the navigation bar above and find the book you would like to distribute. Use the \"Distribute\" button to distribute to a class so your students can work on it.", 
+            "lc10PlaylistImported": "Import successful", 
+            "avrgResults": "Average results for all participants", 
+            "students": "Students", 
+            "allClasses": "All classes", 
+            "reporting": {
+                "openKnowledgeGaps": "Open knowledge gaps", 
+                "knowledgegap": {
+                    "popup": {
+                        "delete": {
+                            "text": "Do you want to permanently delete this knowledge gap for the student?", 
+                            "button": "Delete knowledge gap", 
+                            "title": "Delete knowledge gap"
+                        }
+                    }, 
+                    "alreadyRemoved": "The knowledge gap no longer exists.", 
+                    "delete": {
+                        "notification": "The knowledge gap has been deleted."
+                    }
+                }, 
+                "knowledgeGaps": "Knowledge gaps", 
+                "closedKnowledgeGaps": "Closed knowledge gaps", 
+                "knowledgeGapClosed": "Closed", 
+                "knowledgeGapTitle": "Knowledge gap title", 
+                "knowledgeGapLastDiscovered": "Recently discovered", 
+                "knowledgeGapDiscovered": "Discovered", 
+                "bookActivities": "Book activity", 
+                "knowledgeGapLastClosed": "Recently closed"
+            }, 
+            "noBooksAllocatedHintSubInfo": "Click on \"Classes\" in the navigation bar, set up a new class and add students to it. Then you you will be able to distribute books from the library.", 
+            "deactivateResults": {
+                "text": "Are you sure you want to deactivate the test results for your students?", 
+                "success": "The results have been deactivated."
+            },
+            "noBooksAllocatedHint": "You do not have any classes that you can assign books to.", 
+            "noCurrentGroupToDosSubInfo": "You can assign exercises in the \"books\" section. Open one of the books that you have distributed and select the exercises you want to assign. You can also create your own exercise series in the \"Worksheets\" section.", 
+            "noCurrentStudentToDos": "The selected student has no current assignments.", 
+            "noExpiredGroupToDos": "The selected class has no past assignments.", 
+            "noStudentActivities": "There is no activity for this student in the given time period.", 
+            "noKnowledgeGaps": "You do not have a class whose knowledge gaps can be displayed.", 
+            "studentToDos": "Assignments - ", 
+            "noStudents": "(no students)", 
+            "noScheduledGroupToDos": "The selected class has no scheduled assignments.", 
+            "assignTodos": "Assign", 
+            "purchase": "You need a class licence to distribute books to your students. After purchasing a licence, you can assign any exercise series. Detailed, instant reports on all your students' work will then help you to target your teaching to meet their needs even more precisely. Contact our customer service team for more information about our prices.", 
+            "bookAlreadyAllocated": "Book already distributed", 
+            "dashboard": {
+                "activities": {
+                    "infoText": "Number of completed exercise series by type in the selected time period.", 
+                    "all": "All", 
+                    "last7days": "Last 7 days", 
+                    "students": "Students", 
+                    "tableName": "Completed exercise series", 
+                    "last14days": "Last 14 days", 
+                    "today": "Today", 
+                    "timeSelector": "Time period", 
+                    "noData": "No activity in the selected time period.", 
+                    "last1day": "Since yesterday", 
+                    "last30days": "Last 30 days"
+                }, 
+                "loadingError": "An Error occurred, please reload the page.", 
+                "knowledgeGaps": {
+                    "infoText": "\"Total\" shows all knowledge gaps open in the selected time period. \"Closed\" shows how many of those were closed in the same time period.", 
+                    "all": "All", 
+                    "total": "Total", 
+                    "last7days": "Last 7 days", 
+                    "students": "Students", 
+                    "tableName": "Knowledge gaps", 
+                    "last14days": "Last 14 days", 
+                    "today": "Today", 
+                    "closed": "Closed", 
+                    "timeSelector": "Period:", 
+                    "noData": "No knowledge gaps detected for the selected period.", 
+                    "last1day": "Since yesterday", 
+                    "last30days": "Last 30 days"
+                }, 
+                "ranking": {
+                    "infoText": "Students receive the following rewards for completing an exercise series, depending on their result: <br/>\n- over 60 % - one coin (per attempt) <br/>\n- over 75 % - two coins (per attempt) <br/>\n- over 90 % - three coins (per attempt) <br/>\n- 100 % - one star (once only) <br/>\n<br/>\nTop tip: Collecting the coins and stars can be a great motivation for your students! For example, you can offer them rewards when they reach certain goals, or you can start a class competition.", 
+                    "all": "All awards", 
+                    "time4": "Last 14 days", 
+                    "time5": "Last 30 days", 
+                    "average": "Class \u00d8", 
+                    "tableName": "Stars and coins earned", 
+                    "time1": "Today", 
+                    "time2": "Since yesterday", 
+                    "time3": "Last 7 days", 
+                    "timeSelector": "Period:", 
+                    "student": "Student name", 
+                    "noData": "The selected class has no students yet."
+                }, 
+                "headline": "General information on \"{{groupName}}\"", 
+                "reloadButton": "Reload", 
+                "performanceReport": {
+                    "pdfLinkSummaryText": "Summary", 
+                    "updated": "Last update:", 
+                    "weeklyReport": "Weekly activity report", 
+                    "to": "to", 
+                    "infoText": "Here you can see each student's best results for their work in the books.", 
+                    "noReports": "Here you can download the weekly summary of your classes' activities.{{break}}The first summary will be available within one week after the class was set up.", 
+                    "tableName": "Report", 
+                    "classReport": "Class report", 
+                    "noContent": "The activity report will be available from next week.", 
+                    "linkText": "Activity: detailed report", 
+                    "summaryItem": "Activity report", 
+                    "summaryReport": "Activity report", 
+                    "pdfLinkText": "Activity Report", 
+                    "weeklyItem": "Activity report"
+                }, 
+                "hotspotExercises": {
+                    "infoText": "Based on all of the assignments due on the chosen date, this section shows the five exercises with the highest error rate. The percentage value gives the average of the best results of all participants.", 
+                    "loadButton": "Display", 
+                    "timeSelectorDays": "Day(s) (only for QA)", 
+                    "tableName": "Exercises with most errors - top 5", 
+                    "tableHeadParticipant": "Participant", 
+                    "tableHeadExercise": "Exercise", 
+                    "exerciseTitle": "{{exerciseTitle}} - Exercise {{exerciseNumber}}", 
+                    "timeSelectorToday": "Today", 
+                    "timeSelector": "From assignments due:", 
+                    "timeSelectorYesterday": "Yesterday", 
+                    "timeSelectorTomorrow": "Tomorrow", 
+                    "tableHeadResult": "Result", 
+                    "noData": "No exercises completed for the selected due date."
+                }, 
+                "todos": {
+                    "infoText": "Here is an overview of all assignments due in the selected time period. <br/><br/>\n- Green: Assignments completed - score 60% or higher<br/>\n- Red: Assignments completed - score under 60%<br/>\n- Grey: Assignments incomplete", 
+                    "upcoming": "in future", 
+                    "todayntomorrow": "today or tomorrow", 
+                    "last7days": "in the last 7 days", 
+                    "tableName": "Performance overview - all assignments", 
+                    "yesterday": "yesterday", 
+                    "next14days": "in the next 14 days", 
+                    "performance": "Performance", 
+                    "timeSelector": "Due:", 
+                    "undone": {
+                        "exercises": "{{amount}} exercises", 
+                        "tooltip": "Not yet complete"
+                    }, 
+                    "last14days": "in the last 14 days", 
+                    "student": "Student name", 
+                    "error": {
+                        "exercises": "{{amount}} exercises", 
+                        "tooltip": "Error"
+                    }, 
+                    "done": {
+                        "exercises": "{{amount}} exercises", 
+                        "tooltip": "complete"
+                    }, 
+                    "next7days": "in the next 7 days", 
+                    "noData": "No exercises due by the selected date.", 
+                    "tomorrow": "tomorrow", 
+                    "today": "today"
+                }, 
+                "completedExercises": {
+                    "infoText": "<p>Number of completed exercise series by type in the selected time period. Every series is counted only once, regardless of the number of attempts and repeats.</p>\n<br/>\n<p>\n{{todoIcon}}: Completed assignments<br/>\n{{bookIcon}}: Completed series in books<br/>\n{{gapIcon}}: Completed knowledge gap series<br/>\n</p>", 
+                    "all": "All", 
+                    "last7days": "Last 7 days", 
+                    "students": "Students", 
+                    "tableName": "Completed exercise series", 
+                    "last14days": "Last 14 days", 
+                    "today": "Today", 
+                    "timeSelector": "Period:", 
+                    "noData": "No exercises series completed for the selected period.", 
+                    "last1day": "Since yesterday", 
+                    "last30days": "Last 30 days"
+                }, 
+                "studiekring": {
+                    "report": {
+                        "infoText": "info text", 
+                        "studentSelector": "Student", 
+                        "tableName": "Parent report data", 
+                        "dateSelector": "Report generation date"
+                    }
+                }, 
+                "activityReport": {
+                    "pdfLinkSummaryText": "Summary", 
+                    "updated": "last updated:", 
+                    "weeklyReport": "Weekly activity report", 
+                    "to": "to", 
+                    "infoText": "Here you can see each student's best results for their book work. The overview is updated every week.", 
+                    "noReports": "Here you can download the weekly summary of your classes' activities.{{break}}The first summary will be available within one week after the class was set up.", 
+                    "tableName": "Report", 
+                    "classReport": "Class report", 
+                    "noContent": "The activity report will be available from next week.", 
+                    "linkText": "Activity: detailed report", 
+                    "summaryItem": "Activity report", 
+                    "summaryReport": "Activity report", 
+                    "pdfLinkText": "Activity Report", 
+                    "weeklyItem": "Activity report"
+                }
+            }, 
+            "myLibrary": "All my books", 
+            "todoStartedHint": "The student started the exercise series but has not finished yet.", 
+            "noActivitiesSubInfo": "Click on \"Classes\" in the navigation bar, set up a class and add students to it. Then you you will be able to evaluate their activity.", 
+            "downloadPopupExercise": "Exercise series", 
+            "bookAlreadyAllocatedShort": "(Already distributed)"
+        }, 
+        "authorization": {
+            "showResults": {
+                "label": "Show results"
+            }, 
+            "knowledgegaps": {
+                "subInfo": "Please enter your password to see knowledge gaps and results.", 
+                "button": "Unlock knowledgegaps", 
+                "hint": "Knowledgegaps must be unlocked."
+            }
+        }, 
+        "backoffice": {
+            "labels": {
+                "activationkeys": "Activation keys", 
+                "schoolId": "School ID", 
+                "schoolName": "School name", 
+                "userId": "User ID", 
+                "licenseEndDate": "End date", 
+                "userType": "Type", 
+                "licenseId": "License Id", 
+                "activationkey": "Activation key", 
+                "schoolDeleted": "School deleted", 
+                "accountId": "Account ID", 
+                "internalid": "Internal ID", 
+                "groupId": "Class ID", 
+                "groupName": "Class name", 
+                "licenseName": "License name", 
+                "productId": "Product ID", 
+                "username": "User name", 
+                "contingent": "Contingent", 
+                "firstname": "First Name", 
+                "lastname": "Last Name", 
+                "dateCreated": "Creation date", 
+                "groupDeleted": "Class deleted", 
+                "productName": "Product name", 
+                "shoolDeleted": "School deleted", 
+                "inheritedFromEntityId": "Inherited from", 
+                "roles": "Role", 
+                "redeemed": "Redeemed", 
+                "licenseStartDate": "Start date", 
+                "classes": "Classes", 
+                "productHolder": "Product holder"
+            }, 
+            "addProduct": "Add product", 
+            "licenses": {
+                "select": {
+                    "startDate": {
+                        "defaultOption": "Choose start date"
+                    }, 
+                    "product": {
+                        "defaultOption": "Choose product"
+                    }, 
+                    "endDate": {
+                        "defaultOption": "Choose end date"
+                    }, 
+                    "license": {
+                        "defaultOption": "Choose license"
+                    }
+                }
+            }, 
+            "deleteSchoolClass": "Delete class", 
+            "schoolHasActiveUsers": "This school still has active users.", 
+            "addLicense": "Add license", 
+            "save": "Save", 
+            "schoolHasActiveClasses": "This school still has active classes.", 
+            "form": {
+                "createActivationkey": {
+                    "product": {
+                        "legend": "Product information"
+                    }, 
+                    "fields": {
+                        "classid": {
+                            "label": "Class ID"
+                        }, 
+                        "schoolid": {
+                            "label": "School ID"
+                        }, 
+                        "schoolname": {
+                            "label": "School name"
+                        }, 
+                        "submit": {
+                            "text": "Create activation key"
+                        }, 
+                        "classname": {
+                            "label": "Class name"
+                        }, 
+                        "usertype": {
+                            "label": "Type of user"
+                        }, 
+                        "productid": {
+                            "label": "Product ID"
+                        }
+                    }, 
+                    "school": {
+                        "legend": "School data"
+                    }, 
+                    "feedbacks": {
+                        "existingSchool": "A school with this ID already exists in the system.", 
+                        "newSchool": "A new school will be created."
+                    }, 
+                    "usertype": {
+                        "legend": "Usertype"
+                    }, 
+                    "result": {
+                        "acKey": "Your activation key: {{ actKey }}", 
+                        "legend": "CSV results for created activation keys"
+                    }, 
+                    "class": {
+                        "legend": "Class data"
+                    }
+                }, 
+                "resetUser": {
+                    "submit": "Reset password"
+                }
+            }, 
+            "notifications": {
+                "noSchools": "No schools available", 
+                "removeLicenseFromClass": "Do you want to remove the license from this class?", 
+                "conflictingRoles": "The role of the entered activation key does not match the role of this user.", 
+                "deleteActKeySchool": "Do you want to remove the activation key from this school?", 
+                "noMembers": "No members available", 
+                "removeLicenseFromUser": "Do you want to remove the license from this user?", 
+                "redeemSuccess": "Activation key was redeemed successfully.", 
+                "removeLicenseFromSchool": "Do you want to remove the license from this school?", 
+                "noActivationKeys": "No activation keys available, yet.", 
+                "noProducts": "No products available", 
+                "deleteActKeyClass": "Do you want to remove the activation key from this class?", 
+                "noGroups": "No classes available", 
+                "noLicenses": "No licenses attached"
+            }, 
+            "user": {
+                "newSchoolClass": {
+                    "add": "Add users to a class:", 
+                    "enterId": "internal class id"
+                }, 
+                "userdata": {
+                    "changeFirstName": "Change first name:", 
+                    "changeUsername": "Change username:", 
+                    "changeLastName": "Change last name:"
+                }, 
+                "resetOwnPassword": "The user must reset their password at the next login.", 
+                "changePassword": "Change password", 
+                "form": {
+                    "username": {
+                        "label": "Username:"
+                    }
+                }
+            }, 
+            "class": {
+                "removeUser": {
+                    "confirmation": "Do you want to remove the user from this class?"
+                }
+            }, 
+            "search": {
+                "allresults": "Leave the input fields empty to display all data.", 
+                "noresults": "No results found.", 
+                "submit": "Search"
+            }, 
+            "schoolClassHasActiveUsers": "This school class still has active users.", 
+            "license": {
+                "product": {
+                    "placeholder": "Choose product"
+                }, 
+                "start_date": {
+                    "placeholder": "Choose start date"
+                }, 
+                "end_date": {
+                    "placeholder": "Choose end date"
+                }
+            }, 
+            "undeleteSchool": "Restore school.", 
+            "searchSchool": {
+                "pageTitle": "Search school by internal ID, school ID and school name"
+            }, 
+            "changeLicense": "Change license", 
+            "deleteSchool": "Delete school", 
+            "createActivationkey": {
+                "pageTitle": "Create an activation key"
+            }, 
+            "undeleteSchoolClass": "Reactivate class", 
+            "navigation": {
+                "searchSchool": "Search school", 
+                "groupOperations": "Classes", 
+                "searchGroup": "Search class", 
+                "schoolOperations": "School"
+            }, 
+            "searchGroup": {
+                "pageTitle": "Find classes by name or ID"
+            }, 
+            "searchUser": {
+                "pageTitle": "Find users by their user data"
+            }
+        },
+        "module": {
+            "role": {
+                "connections": {
+                    "headline": "Vernetzendes", 
+                    "subline": "Verbindungen von diesem Thema zu anderen Themen"
+                }, 
+                "learningunit": {
+                    "topline": "Lerneinheit"
+                }, 
+                "wrapup": {
+                    "headline": "Vernetzendes", 
+                    "subline": "Verbindungen von diesem Thema zu anderen Themen"
+                }, 
+                "warmup": {
+                    "headline": "Einstieg in das Unterrichtsthema", 
+                    "subline": "Mach dich mit dem Thema vertraut"
+                }, 
+                "preknowledge": {
+                    "headline": "Vorwissen", 
+                    "subline": "Grundlagen um dieses Thema zu meistern"
+                }
+            }, 
+            "followUpBooks": {
+                "headline": "Weitere Unterrichtsthemen", 
+                "subline": "Die folgenden B\u00fccher sind im Anschluss an dieses Buch zu empfehlen"
+            }, 
+            "contentType": {
+                "experiment": "Erkundungen", 
+                "story": "Story", 
+                "concept": "Methoden & Begriffe", 
+                "examples": "Beispiele"
+            }, 
+            "learningphase": {
+                "application": "Anwenden & Vertiefen", 
+                "practice": "\u00dcben & Festigen", 
+                "intro": "Einstieg", 
+                "exploration": "Erkunden & Sichern"
+            }
+        },
+        "worksheets": {
+            "code": "Sharing code", 
+            "exerciseType": "Type", 
+            "back": "Worksheets", 
+            "createNew": "Create a new worksheet", 
+            "approxDuration": "duration: approx.", 
+            "export": {
+                "codePrefix": "Worksheet Code:", 
+                "explanation": "Give this code to teachers you wish to share your worksheets with so they can import a copy of your worksheet. If you make any changes, you will need to create and give out a new code for the worksheet.", 
+                "share": "Share \"{{worksheetName}}\"", 
+                "title": "Export worksheet"
+            }, 
+            "removeConfirm": "Do you really want to delete this worksheet?", 
+            "worksheetExport": {
+                "button": {
+                    "text": "Export worksheet"
+                }
+            }, 
+            "exerciseAlreadySelected": "This exercise is already in your worksheet. Please use the above arrows {{left}} {{right}} to browse the exercises.", 
+            "worksheetImport": {
+                "body": "To copy your colleagues' worksheet, enter the code you received from them here.", 
+                "header": "Import worksheet", 
+                "button": {
+                    "text": "Import worksheet"
+                }, 
+                "success": {
+                    "hint": "Worksheet was imported"
+                }
+            }, 
+            "noExercises": "No exercises available.", 
+            "copyTitle": "{{title}} - Copy", 
+            "allExercises": "All exercises", 
+            "lastEdited": "Last edited {{lastEdited}}", 
+            "namePlaceholder": "Worksheet name", 
+            "outdatedExercises": "outdated", 
+            "exercises": "exercises", 
+            "dontRemove": "Do not delete", 
+            "pleaseChooseWStoAssign": "Please select at least one worksheet to assign to your students as an assignment.", 
+            "default": "Preconfigured worksheets", 
+            "createFirstWorksheet": "Create your first worksheet.", 
+            "remove": "Delete", 
+            "selectBoxChoose": "Please select", 
+            "exerciseNumber": "Exercise {{n}} of {{m}}", 
+            "my": "My worksheets", 
+            "options": {
+                "removeOutdated": "This worksheet contains outdated exercises that are no longer supported. Please edit your worksheet by removing or replacing these exercises before continuing.", 
+                "preview": "Preview", 
+                "help": {
+                    "description": "Unchecking this box deactivates the following features for the students: the support section for second attempts, the solution and explanation section and the buttons \"Show hint\", \"Textbook\" and \"Show solution\".", 
+                    "title": "Tips and help"
+                }, 
+                "title": "Settings", 
+                "edit": "Edit", 
+                "move": "Move", 
+                "export": "Export", 
+                "download": "Download", 
+                "copy": "Copy", 
+                "bubble": {
+                    "title": "Worksheet Options"
+                }, 
+                "randomExercises": {
+                    "description": "Deactivate this option to randomise the exercise values generated for each student.", 
+                    "title": "Each student receives the same exercises"
+                }, 
+                "delete": "Delete"
+            }, 
+            "playlistimport": "Import old worksheets"
+        },
+        "a": {
+            "key": {
+                "for": {
+                    "checking": "some text for checking"
+                }
+            }
+        }, 
+        "dummy": "test",
+        "worksheet": {
+            "worksheetImport": {
+                "header": "HEADER"
+            }, 
+            "import": {
+                "header": "Import worksheet", 
+                "button": {
+                    "text": "Import worksheet"
+                }
+            }, 
+            "outdatedExercise": "Outdated excercise!", 
+            "saveWorksheet": "Save"
+        },
+        "filter": {
+            "classlevel": "All class levels", 
+            "noMatchingBooks": "No book found for these criteria.", 
+            "test_filter": "All books", 
+            "profession": "All books", 
+            "topic": "All topics", 
+            "prefixText": "Show books:", 
+            "supertopic": "All topics"
+        }, 
+        "TEST_KEY": "TEST", 
+        "dialog": {
+            "authorize": {
+                "title": "Enter your password", 
+                "details": "Please enter your password to make all your results and achievements visible.", 
+                "submit": "Enter", 
+                "error": "wrong password"
+            }, 
+            "notRepeatable": {
+                "title": "Attention"
+            }, 
+            "enterStartCode": {
+                "title": "Start code needed", 
+                "submit": "Start now", 
+                "details": "You need a start code from the teacher to start this test.", 
+                "cancel": "Do not start", 
+                "notRepeatable": "You are only allowed to hand in this test once. You can pause and continue working on the test until the due date. Once you hand the test in, you cannot retake it.", 
+                "failureCodeNotAccepted": "Code not accepted"
+            }
+        }, 
+        "pdf": {
+            "download": "PDF herunterladen", 
+            "infoText": "Hier k\u00f6nnen Sie kostenlose PDFs mit Aufgaben zur freien Verwendung (Open Education Resources) suchen und herunterladen.", 
+            "results": "results"
+        }, 
+        "login": {
+            "forgotPassword": {
+                "contactTeacherWithEmail": {
+                    "success": {
+                        "text": "We have sent an E-mail to ask your teacher to reset your password.", 
+                        "button": "Return to Login", 
+                        "title": "Message sent"
+                    }, 
+                    "title": "Contact Your Teacher", 
+                    "text": "Please contact your teacher to have your password reset. </br> \nYou can also send an E-mail directly to your teacher.", 
+                    "button": "Inform your teacher by E-mail", 
+                    "error": {
+                        "text": "You have already informed your teacher that you forgot your password (3 times) today. Please wait for your teacher to contact you or try again tomorrow.", 
+                        "button": "Return to Login", 
+                        "title": "E-mail Already Sent"
+                    }, 
+                    "preText": {
+                        "text": "Username: {{username}}", 
+                        "link": "change"
+                    }
+                }, 
+                "inputField": "Username / E-mail Address", 
+                "studentNoTeacherWithoutSchool": {
+                    "text": "Unfortunately, we cannot verify your account.\nPlease ask your teacher to set up a new account for you.", 
+                    "title": "Contact Your Teacher"
+                }, 
+                "title": "Forgot Password", 
+                "text": "Please enter the username or e-mail address to reset the password.", 
+                "button": "Continue", 
+                "emailSent": {
+                    "text": "We have sent an E-mail to {{email}} about resetting the password. This could take a few minutes. You may need to check your junk mail folder to make sure the E-mail was not put there.", 
+                    "link": "I have not received an E-mail", 
+                    "title": "E-mail Sent"
+                }, 
+                "tooManyAttempts": {
+                    "text": "A new password has been requested more than 10 times in the last hour. In order to keep the account secure, you will have to wait an hour before requesting a new password.", 
+                    "title": "Request Limit Exceeded"
+                }, 
+                "error": "The username or e-mail address could not be found.<br/>\nPlease contact customer service or your teacher.", 
+                "studentNoTeacherWithSchool": {
+                    "text": "Please ask your teacher to contact customer support.", 
+                    "title": "Contact Your Teacher"
+                }, 
+                "backToLogin": "Return to Login", 
+                "contactTeacherNoEmail": {
+                    "preText": {
+                        "text": "Username: {{username}}", 
+                        "link": "change"
+                    }, 
+                    "title": "Contact Your Teacher", 
+                    "text": "Please contact your teacher to have your password reset."
+                }, 
+                "support": {
+                    "text": "Unfortunately, an error has occurred. Please call customer service at +49 30 300 2440 00 (Mo - Fr from 8:30am - 5:00pm) so that we can reset the password.", 
+                    "title": "Contact Customer Service"
+                }
+            }, 
+            "unexpectedError": {
+                "text": "You can try again. If this fails, our customer service representatives will be glad to help you.", 
+                "title": "Oops, an error has occurred"
+            }, 
+            "systemSelector": {
+                "placeholder": "Choose a country", 
+                "label": "Choose a country"
+            }, 
+            "form": {
+                "resendActivation": "Resend Activation Link", 
+                "inputField": {
+                    "password": "Password", 
+                    "usernameEmail": "Username / E-mail Address"
+                }, 
+                "title": "Log In", 
+                "button": {
+                    "confirm": "Continue"
+                }, 
+                "Register": "Register as a new user", 
+                "warning": {
+                    "nonSelfRegistration": "An error has occurred. Please log in again."
+                }, 
+                "link": {
+                    "forgotPassword": "Forgot your password?"
+                }, 
+                "noAccount": "No account?"
+            }, 
+            "error": {
+                "dangling": "You can only log in once your class has been activated. Please try again later.", 
+                "disabled": "This account has been disabled by customer service. Contact information for customer service can be found on the website.", 
+                "activation": "This user account has not been activated yet. Please click on the link in the activation e-mail.", 
+                "password": "The password is incorrect.", 
+                "user": "The username or e-mail address is incorrect."
+            }
+        }, 
+        "navigation": {
+            "groups": "Classes", 
+            "ranking": "Ranking", 
+            "back": "Back", 
+            "books": "Books", 
+            "teacherTutorial": "Instructions", 
+            "pdfs": "PDFs", 
+            "knowledgeGaps": "Open knowledge gaps", 
+            "interactiveWhiteboard": "Tafelbilder", 
+            "knowledgeGapsAll": "Knowledge gaps", 
+            "todos": "Assignments", 
+            "verification": "Activation", 
+            "activities": "Activity", 
+            "todosBack": "Assignments", 
+            "reporting": "Reports", 
+            "namePlaceholder": "My account", 
+            "activitiesfilter": {
+                "all": "All", 
+                "books": "Books", 
+                "gaps": "Knowledge gaps", 
+                "prefix": "Show activity from:", 
+                "todos": "Assignments"
+            }, 
+            "activitiesBook": "Free practice", 
+            "licence": "My Licence", 
+            "worksheets": "Worksheets", 
+            "payment": "Purchase", 
+            "activitiesBookBack": "Free practice", 
+            "knowledgeGapsStudent": "Knowledge gaps", 
+            "settings": "Settings", 
+            "dashboard": "Dashboard"
+        }, 
+        "user": {
+            "welcome": {
+                "text2": "\u00a1Te invitamos a conocerla!  (no translation needed)", 
+                "text": "(no translation needed)\n<p>Bienvenido/a a la versi\u00f3n actualizada de PAM, con mejoras para los usuarios.</p>\n<p>\u00a1Te invitamos a conocerla!</p>\n<p>Al final der la pantalla encontar\u00e1s en <a href=\"{{helpUrl}}\">Ayuda</a> videos tutoriales con las mejoras realizadas</p>", 
+                "text1": "Bienvenido/a a la versi\u00f3n actualizada de PAM, con mejoras para los usuarios. (no translation needed)", 
+                "text3": "Al final der la pantalla encontar\u00e1s en {{help}} videos tutoriales con las mejoras realizadas (no translation needed)"
+            }, 
+            "navigation": {
+                "addUser": "Add user", 
+                "resetUser": "Reset user", 
+                "addActivationkey": "Redeem activation key", 
+                "createActivationkey": "Activation key", 
+                "userOperations": "User settings", 
+                "searchUser": "Search for user"
+            }, 
+            "form": {
+                "reset": {
+                    "success": "This user's password has been reset"
+                }, 
+                "addUser": {
+                    "admin": {
+                        "success": "Back-office user added. The password is: \"<b>{{ password }}</b>\". Please make a note and keep it safe!"
+                    }, 
+                    "fields": {
+                        "principal": {
+                            "label": "Type of user account"
+                        }
+                    }, 
+                    "other": {
+                        "success": "User added."
+                    }, 
+                    "pageTitle": "Register users in the system"
+                }, 
+                "fields": {
+                    "school_id": {
+                        "errors": {
+                            "invalidSchoolId": "Invalid School ID"
+                        }
+                    }
+                }, 
+                "register": {
+                    "pageTitle": "Create a user account", 
+                    "fields": {
+                        "username": {
+                            "errors": {
+                                "usernameAlreadyExists": "This username is already taken."
+                            }, 
+                            "label": "User name:"
+                        }, 
+                        "conflictingRoles": "This user already exists with a conflicting role.", 
+                        "firstName": {
+                            "placeholder": "optional", 
+                            "label": "First Name:"
+                        }, 
+                        "lastName": {
+                            "placeholder": "optional", 
+                            "label": "Last Name:"
+                        }, 
+                        "passwordRepeat": {
+                            "label": "Repeat password:"
+                        }, 
+                        "submit": {
+                            "text": "Register"
+                        }, 
+                        "activationKey": {
+                            "label": "Activation key:"
+                        }, 
+                        "voucherCode": {
+                            "label": "Voucher Code"
+                        }, 
+                        "roles": {
+                            "demo": {
+                                "label": "Demo user"
+                            }, 
+                            "beta": {
+                                "label": "Beta user"
+                            }, 
+                            "qs": {
+                                "label": "QS user"
+                            }
+                        }, 
+                        "activationkey": {
+                            "errors": {
+                                "activationKeyLimitReached": "The number of users permitted for this activation key has already been reached.", 
+                                "invalidActivationKey": "This activation key is invalid.", 
+                                "activationKeyDeleted": "This activation key has been deleted.", 
+                                "conflictingRoles": "This user already exists with a conflicting role."
+                            }
+                        }, 
+                        "password": {
+                            "label": "Password:"
+                        }
+                    }, 
+                    "termsAndConditions": {
+                        "header": "Terms and conditions", 
+                        "link": "terms and conditions", 
+                        "text": "I accept the"
+                    }, 
+                    "success": "Registration successful! Click to <a href=\"{{loginUrl}}\">log in</a>"
+                }, 
+                "redeemActivationkey": {
+                    "pageTitle": "Redeem an activation key for a user"
+                }, 
+                "resetUser": {
+                    "pageTitle": "Reset the user password (password = username)"
+                }, 
+                "worksheetImport": {
+                    "fields": {
+                        "code": {
+                            "errors": {
+                                "codeNotFound": "Unrecognised code"
+                            }
+                        }, 
+                        "submit": {
+                            "text": "Import"
+                        }
+                    }
+                }, 
+                "redeem": {
+                    "success": "Activation key redeemed"
+                }, 
+                "changePassword": {
+                    "pageTitle": "Change password", 
+                    "fields": {
+                        "originalPassword": {
+                            "label": "Current password"
+                        }
+                    }, 
+                    "successLink": "Continue", 
+                    "success": "Password changed.", 
+                    "submit": "Save password"
+                }, 
+                "addActivationkey": {
+                    "pageTitle": "Add an activation key to a user account"
+                }, 
+                "login": {
+                    "pageTitle": "Log in", 
+                    "submit": "Submit", 
+                    "error": "Incorrect username or password"
+                }, 
+                "searchUser": {
+                    "noResult": "No user matches this information."
+                }, 
+                "registerTeacher": {
+                    "fields": {
+                        "username": {
+                            "label": "User name:"
+                        }, 
+                        "firstName": {
+                            "placeholder": "optional", 
+                            "label": "First Name:"
+                        }, 
+                        "roles": {
+                            "qs": {
+                                "label": "QS user"
+                            }, 
+                            "demo": {
+                                "label": "Demo user"
+                            }, 
+                            "dev": {
+                                "label": "Dev user"
+                            }, 
+                            "trial": {
+                                "label": "Trial user"
+                            }, 
+                            "beta": {
+                                "label": "Beta user"
+                            }, 
+                            "staff": {
+                                "label": "Staff user"
+                            }
+                        }, 
+                        "lastName": {
+                            "placeholder": "optional", 
+                            "label": "Last Name:"
+                        }, 
+                        "passwordRepeat": {
+                            "label": "Repeat password:"
+                        }, 
+                        "submit": {
+                            "text": "Register"
+                        }, 
+                        "activationKey": {
+                            "errors": {
+                                "invalidActivationKey": "Invalid activation key"
+                            }, 
+                            "label": "Activation key:"
+                        }, 
+                        "password": {
+                            "label": "Password:"
+                        }
+                    }
+                }, 
+                "backoffice": {
+                    "fields": {
+                        "activationkey": {
+                            "errors": {
+                                "activationKeyLimitReached": "The number of users permitted for this activation key has already been reached.", 
+                                "invalidActivationKey": "This activation key is invalid.", 
+                                "activationKeyWrongSystem": "The activation is invalid for the chosen system.", 
+                                "activationKeyDeleted": "This activation key has been deleted.", 
+                                "conflictingRoles": "This user already exists with a conflicting role."
+                            }
+                        }, 
+                        "username": {
+                            "errors": {
+                                "usernameAlreadyExists": "This username is already taken.", 
+                                "adminPasswordResetNotAllowed": "Admin user passwords cannot be reset.", 
+                                "userNotFound": "Username not found."
+                            }
+                        }, 
+                        "school_id": {
+                            "errors": {
+                                "schoolClassIdAlreadyInSchool": "A school with this ID already exists"
+                            }
+                        }, 
+                        "schoolClassId": {
+                            "errors": {
+                                "userNotInSystemOfClass": "This user is not in the system of the chosen class.", 
+                                "invalidClassId": "Invalid class id"
+                            }
+                        }
+                    }, 
+                    "logout": "Log out"
+                }
+            }, 
+            "blocked": {
+                "text": "You have been blocked from the system because of misuse. Please contact your teacher/our customer support."
+            }
+        }
+    }
+}

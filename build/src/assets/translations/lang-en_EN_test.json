@@ -1,0 +1,222 @@
+{
+    "jsapp": {
+        "datepicker": {
+            "monthNames": {
+                "february": "February", 
+                "october": "October", 
+                "march": "March", 
+                "august": "August", 
+                "september": "September", 
+                "may": "May", 
+                "january": "January", 
+                "june": "June", 
+                "april": "April", 
+                "december": "December", 
+                "july": "July", 
+                "november": "November"
+            }, 
+            "dateRange": {
+                "header": "Start/end", 
+                "headerLeft": "Select start date", 
+                "headerRight": "Select end date"
+            }, 
+            "dayNamesShort": {
+                "monday": "Mon", 
+                "tuesday": "Tue", 
+                "friday": "Fri", 
+                "wednesday": "Wed", 
+                "thursday": "Thu", 
+                "sunday": "Sun", 
+                "saturday": "Sat"
+            }, 
+            "dayNamesMin": {
+                "monday": "Mo", 
+                "tuesday": "Tu", 
+                "friday": "Fr", 
+                "wednesday": "We", 
+                "thursday": "Th", 
+                "sunday": "Su", 
+                "saturday": "Sa"
+            }, 
+            "time": "Time:", 
+            "dayNames": {
+                "monday": "Monday", 
+                "tuesday": "Tuesday", 
+                "friday": "Friday", 
+                "wednesday": "Wednesday", 
+                "thursday": "Thursday", 
+                "sunday": "Sunday", 
+                "saturday": "Saturday"
+            }, 
+            "monthNamesShort": {
+                "february": "Feb", 
+                "october": "Oct", 
+                "march": "Mar", 
+                "august": "Aug", 
+                "september": "Sep", 
+                "may": "May", 
+                "january": "Jan", 
+                "june": "Jun", 
+                "april": "Apr", 
+                "december": "Dec", 
+                "july": "Jul", 
+                "november": "Nov"
+            }
+        }, 
+        "folders": {
+            "notification": {
+                "rename": {
+                    "failure": "The folder could not be renamed.", 
+                    "success": "The folder has been renamed."
+                }, 
+                "create": {
+                    "failure": "Could not create folder.", 
+                    "success": "Folder was created succesfully."
+                }, 
+                "move": {
+                    "failure": "The worksheet {{worksheetName}} cannot be moved to the folder {{folderName}}.", 
+                    "success": "The worksheet \"{{worksheetName}}\" has been moved to folder \"{{folderName}}\"."
+                }, 
+                "delete": {
+                    "nonEmptyFolder": "This folder contains worksheets and cannot be deleted. Please move or delete the worksheets first.", 
+                    "success": "Folder deleted succesfully.", 
+                    "lastFolder": "This is the last folder and cannot be deleted."
+                }
+            }, 
+            "bubble": {
+                "deleteWarning": {
+                    "message": "The folder contains worksheets and cannot be deleted. Please move or delete the worksheets first.", 
+                    "title": "Delete folder"
+                }, 
+                "edit": {
+                    "button": "Save", 
+                    "message": "Edit the folder name:", 
+                    "title": "Rename"
+                }, 
+                "create": {
+                    "button": "Create folder", 
+                    "message": "Enter the folder name:", 
+                    "title": "Create a new folder"
+                }, 
+                "move": {
+                    "button": "Move to: {{folderName}}", 
+                    "title": "Move to a different folder"
+                }, 
+                "deleteConfirm": {
+                    "button": "Delete folder", 
+                    "message": "Are you sure you want to delete this folder?", 
+                    "title": "Delete folder"
+                }, 
+                "options": {
+                    "deleteFolder": "Delete folder", 
+                    "editFolder": "Rename", 
+                    "title": "Options"
+                }
+            }, 
+            "customWorksheetsTitle": "My Collection", 
+            "createNew": "New Folder"
+        }, 
+        "worksheets": {
+            "code": "Sharing code", 
+            "exerciseType": "Type", 
+            "back": "Worksheets", 
+            "createNew": "Create a new worksheet", 
+            "approxDuration": "duration: approx.", 
+            "export": {
+                "codePrefix": "Worksheet Code:", 
+                "explanation": "Give this code to teachers you wish to share your worksheets with so they can import a copy of your worksheet. If you make any changes, you will need to create and give out a new code for the worksheet.", 
+                "share": "Share \"{{worksheetName}}\"", 
+                "title": "Export worksheet"
+            }, 
+            "removeConfirm": "Do you really want to delete this worksheet?", 
+            "worksheetExport": {
+                "button": {
+                    "text": "Export worksheet"
+                }
+            }, 
+            "exerciseAlreadySelected": "This exercise is already in your worksheet. Please use the above arrows {{left}} {{right}} to browse the exercises.", 
+            "worksheetImport": {
+                "body": "To copy your colleagues' worksheet, enter the code you received from them here.", 
+                "header": "Import worksheet", 
+                "button": {
+                    "text": "Import worksheet"
+                }, 
+                "success": {
+                    "hint": "Worksheet was imported"
+                }
+            }, 
+            "noExercises": "No exercises available.", 
+            "copyTitle": "{{title}} - Copy", 
+            "allExercises": "All exercises", 
+            "lastEdited": "Last edited {{lastEdited}}", 
+            "namePlaceholder": "Worksheet name", 
+            "outdatedExercises": "outdated", 
+            "exercises": "exercises", 
+            "dontRemove": "Do not delete", 
+            "pleaseChooseWStoAssign": "Please select at least one worksheet to assign to your students as an assignment.", 
+            "default": "Preconfigured worksheets", 
+            "createFirstWorksheet": "Create your first worksheet.", 
+            "remove": "Delete", 
+            "selectBoxChoose": "Please select", 
+            "exerciseNumber": "Exercise {{n}} of {{m}}", 
+            "my": "My worksheets", 
+            "options": {
+                "removeOutdated": "This worksheet contains outdated exercises that are no longer supported. Please edit your worksheet by removing or replacing these exercises before continuing.", 
+                "preview": "Preview", 
+                "help": {
+                    "description": "Unchecking this box deactivates the following features for the students: the support section for second attempts, the solution and explanation section and the buttons \"Show hint\", \"Textbook\" and \"Show solution\".", 
+                    "title": "Tips and help"
+                }, 
+                "title": "Settings", 
+                "edit": "Edit", 
+                "move": "Move", 
+                "export": "Export", 
+                "download": "Download", 
+                "copy": "Copy", 
+                "bubble": {
+                    "title": "Worksheet Options"
+                }, 
+                "randomExercises": {
+                    "description": "Deactivate this option to randomise the exercise values generated for each student.", 
+                    "title": "Each student receives the same exercises"
+                }, 
+                "delete": "Delete"
+            }, 
+            "playlistimport": "Import old worksheets"
+        }, 
+        "a": {
+            "key": {
+                "for": {
+                    "checking": "some text for checking"
+                }
+            }
+        }, 
+        "dummy": "test", 
+        "worksheet": {
+            "worksheetImport": {
+                "header": "HEADER"
+            }, 
+            "import": {
+                "header": "Import worksheet", 
+                "button": {
+                    "text": "Import worksheet"
+                }
+            }, 
+            "outdatedExercise": "Outdated excercise!", 
+            "saveWorksheet": "Save"
+        }, 
+        "filter": {
+            "classlevel": "All class levels", 
+            "noMatchingBooks": "No book found for these criteria.", 
+            "test_filter": "All books", 
+            "profession": "All books", 
+            "topic": "All topics", 
+            "prefixText": "Show books:", 
+            "supertopic": "All topics"
+        }, 
+        "TEST_KEY": "TEST", 
+        "navigation": {
+            "worksheets": "Worksheets"
+        }
+    }
+}
