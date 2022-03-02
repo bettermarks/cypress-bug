@@ -11,6 +11,15 @@ Some actions like "chaning of a tab" that would usually close the components did
 It works when done manually and works with cypress:9.1.1.
 It fails regardless of headless mode with Electron and Chrome
 
+### error message after rerouting to a tab
+![Error Message](https://github.com/bettermarks/cypress-bug/blob/main/errorMessage.png)
+
+### failing tests with cypress 9.5.0
+![9.5.o](https://github.com/bettermarks/cypress-bug/blob/main/with9.5.0.png)
+
+### succeeding tests with cypress 9.1.1
+![9.1.1](https://github.com/bettermarks/cypress-bug/blob/main/with9.1.1.png)
+
 ## How to try it out?
 This setup uses cypress 9.5.0
 * Have node installed
