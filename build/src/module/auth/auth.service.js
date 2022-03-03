@@ -4,19 +4,17 @@
     angular
         .module('bettermarks.auth')
         .service('AuthorizationService', ["UserService", "AVAILABLE_USER_ROLE_NAMES", "LightboxService", "bmApi", "$state", "$rootScope", function (
-            UserService, // for getting the initial role
-            AVAILABLE_USER_ROLE_NAMES, // for getting role constant
-            LightboxService, // to popup a lightbox
-            bmApi, // for calling the backed (authorize)
-            $state, // we need to reload the state when we are done
-            $rootScope // as the top level event bus
+            UserService,
+            AVAILABLE_USER_ROLE_NAMES,
+            LightboxService,
+            bmApi,
+            $state,
+            $rootScope
             ){
 
             var self = this;
             var AUTHORIZED_EVENT_KEY = "authorized";
 
-
-            //has the user initially set the Authorized role?
             self.authorized = UserService.hasRole(AVAILABLE_USER_ROLE_NAMES.AUTHORIZED);
 
             self.isAuthorized = function () {

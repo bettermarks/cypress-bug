@@ -39,7 +39,6 @@
                 var decorateFunc = function () {
                   var serviceResult = orgFunc.apply(null, arguments);
 
-                  //could be serviceParts promise or any other value -> wrap always in promise
                   $q.when(serviceResult).then(function (result) {
                     var eventData;
 
@@ -83,11 +82,6 @@
           }
           return undoneCount;
         };
-        // TODO: Re-enable, see corona comment below
-        // var knowledgeGapsCount = function($serviceResult) {
-        //     var count = $serviceResult.knowledgegaps.length;
-        //     return count;
-        // };
 
         var booksUrl = function ($serviceResult) {
           if ($serviceResult.length > 0) {
@@ -106,10 +100,6 @@
           'GroupManagerService.getAll',
           booksUrl
         );
-        // HIGH LOAD ON BACKEND due to corona, hence
-        // - not calling /v1.0/allknowledgegaps
-        // registerServiceEvent("knowledgeGapsCountChanged" , "KnowledgeGapsService.userKnowledgeGaps.get",
-        //    knowledgeGapsCount);
       }
     ]);
 })(angular);

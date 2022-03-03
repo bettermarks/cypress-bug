@@ -58,8 +58,6 @@ jQuery(function() {
             }, 100);
         }, 10);
     });
-
-    //reset scroll position
     angular.element(window).bind('unload', function() {
         angular.element('body').html('');
     });

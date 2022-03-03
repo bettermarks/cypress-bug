@@ -2,7 +2,7 @@
     'use strict';
     angular
         .module('bettermarks.util.filter', [
-            'bettermarks', // TODO: remove this module after "timezone fix" is enabled,
+            'bettermarks',
             'bettermarks.util.time'
         ])
 
@@ -144,7 +144,6 @@
                     this.ranges = getPastAndFuture();
                 }else if(type == "activities"){
                     this.ranges = getActivitiesRanges();
-                    //this is the only filter set which do not take the first filter by default
                     this.defaultFilter = "last7Days";
                 }
             }
@@ -159,13 +158,10 @@
                     }
                 }
 
-                //Not found
                 if(!result) {
                     if(defaultKey) {
-                        // get the default filter
                         result = this.getById(defaultKey);
                     }else {
-                        // no default -> take the first one
                         result = this.ranges[0];
                     }
                 }

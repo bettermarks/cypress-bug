@@ -56,7 +56,6 @@
 
             var initalResolves = [];
 
-            //function to check if all initial resolves are done
             var isReady = function(){
                 return $q.all(initalResolves);
             };
@@ -77,7 +76,6 @@
                 });
 
                 var refreshHint = function(event, hint){
-                    //Refresh hint on all interested items
                     angular.forEach(hintEventItems, function(item){
                         if(item.hintEvent == event.name){
                             item.hint = hint;
@@ -101,7 +99,6 @@
                 });
 
                 $scope.$on("booksUrlChanged", function(event, bookUrl){
-                    //Refresh URL on all interested items
                     angular.forEach(urlEventItems, function(item){
                         if(item.urlEvent == event.name){
                             item.href = bookUrl;
@@ -185,7 +182,6 @@
 
             this._addItem = function(item){
 
-                //Do not initially show a element which is conditionally
                 if(item.showEvent){
                     showEventItems.push(item);
                     item.show = false;
@@ -253,7 +249,6 @@
                     if(forceSchoolContext){
                         var knowledgeGap = self.getItemById('knowledgeGaps');
                         var openTodos = self.getItemById('todos');
-                        // item.hint holds the value of open items count.
                         if(switchEntryMenu && openTodos.hint === 0 && knowledgeGap.hint > 0) {
                             result = knowledgeGap;
                         } else {
@@ -284,7 +279,6 @@
                 return d.promise;
             };
 
-            // needs to be called inside isReady() response
             this.getFirstTabForTeachers = function() {
                 var todos = AccessService.checkEnabledFeature("devTodoNavi") == false;
 
@@ -358,14 +352,11 @@
             };
 
             this.validateShow = function(item) {
-                // if the `feature` prop is falsy, the item is always shown
-                // if the `feature` prop is truthy, it's only shown when the feature is enabled
                 var isFeatureEnabled = item.feature ? toggles && !!toggles[item.feature] : true;
 
                 item.show = isFeatureEnabled && item.show;
                 var parentId = item.parent;
 
-                //SubMenu Item
                 if(parentId){
                     self.validateMainItem(parentId);
                 }

@@ -17,7 +17,6 @@
             }
 
             var coords = srv.getCoordinates(event);
-            //clearTimeout(timeout);
             $timeout.cancel(timeout);
             timeout = $timeout(function() {
                 var sidebarOffset = angular.element('#sidebar').offset().top;

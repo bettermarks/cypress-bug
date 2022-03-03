@@ -467,7 +467,6 @@
             var utc2 = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
             var _MS_PER_DAY = 1000 * 60 * 60 * 24;
             return function(activityDate, greater) {
-                // Discard the time and time-zone information.
                 var a = new Date(activityDate);
                 var utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
                 var diff_days = Math.floor((utc2 - utc1) / _MS_PER_DAY);

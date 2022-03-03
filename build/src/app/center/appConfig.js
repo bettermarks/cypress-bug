@@ -71,4 +71,4 @@
         bmApiProvider.setEndPoints(endPoints);
       }
     ]);
-})(angular); // jshint ignore:line
+})(angular);

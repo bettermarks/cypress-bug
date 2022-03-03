@@ -1,7 +1,3 @@
-/**
- * @ngdoc overview
- * @name
- */
 (function(angular) {
     'use strict';
     angular
@@ -14,7 +10,6 @@
                 link: function(scope, element, attrs) {
                     if(UserService.getSystem() === attrs.systemJsSystem) {
                         var version = parseInt($window.vrs, 10);
-                        //element.attr('src', attrs.systemJsFile + '?v=' + version);
                         (function(i, s, o, g, r, a, m) {
                             a = s.createElement(o);
                             m = s.getElementsByTagName(o)[0];
@@ -44,4 +39,3 @@
             };
         }]);
 })(angular);
-/**/

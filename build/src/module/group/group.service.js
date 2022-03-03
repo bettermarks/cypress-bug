@@ -1,22 +1,11 @@
 (function(angular) {
     'use strict';
     angular
-        /**
-         * @ngdoc overview
-         * @name bettermarks.group
-         * @description
-         * The group module contains everything about school-classes and their members.
-         * In the config the module's state is added to the stateProvider.
-         */
         .module('bettermarks.group.service', ['bettermarks.api', 'pascalprecht.translate'])
 
         .service("GroupManagerService", ["$q", "$rootScope", "bmApi", "UserService", "_", "$timeout", function($q, $rootScope, bmApi, UserService, _, $timeout) {
             var self = this;
             var allGroupsPromise = false;
-            /**
-             * invalidate cache of needed requests here
-             * in order to keep UCM and ng-center in sync
-             */
             $rootScope.$on('UCM:update', function (_, groupId) {
                 bmApi.invalidate('dashboardCompletedExercisesV11', {groupId: groupId});
                 bmApi.invalidate('group', {groupId: groupId});
@@ -46,7 +35,6 @@
                     });
                 }
 
-                // is there a global selected group
                 if (!selectedGroupId) {
                     resolveDefault();
                 } else {
@@ -92,11 +80,7 @@
                     allGroupsPromise = bmApi.call(
                       'groups',
                       {},
-                      {
-                          // Disabling cache for teachers,
-                          // otherwise problems when trying to allocate book to newly created class:
-                          // Class will not show up in the list of classes until reload of library (BM-51848)
-                          cache: !UserService.isTeacher(),
+                      {cache: !UserService.isTeacher(),
                           success: 'groups'
                       });
 
@@ -248,8 +232,6 @@
 
                 var create = bmApi.call('schoolGroups', {}, httpParams);
                 return create.then(function(group){
-                    //when create a new group we also connecting the user with this group
-                    //so we need fresh group data
                     bmApi.invalidate('groups');
 
                     return group;

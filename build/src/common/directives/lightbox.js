@@ -1,10 +1,3 @@
-/**
- * @ngdoc overview
- * @name bettermarks.lightbox
- * @description
- * Holds controllers and directives for the lightbox
- */
-
 (function(angular) {
     'use strict';
     angular
@@ -28,7 +21,6 @@
 
 
             $scope.reloadState = function() {
-                // reload the state, somehow $state.reload() is not working
                 $state.transitionTo($state.current, $stateParams, {
                     reload: true,
                     inherit: false,
@@ -45,7 +37,6 @@
             $scope.expr = function(expr, b_event) {
 
                 if(b_event) {
-                    // if event is given trigger the event
                     $scope.$broadcast(b_event, expr);
                 }
 
@@ -59,8 +50,6 @@
             });
 
             $scope.retry = function(){
-                // a hack for being sure not to use httpInterceptor
-                // just for nginx logging
                 var i = document.createElement("img");
                 i.src = "/retry";
 
@@ -90,7 +79,6 @@
 
             var self = this;
 
-            //Texts
             var auth = 'jsapp.dialog.authorize';
             var authTitle = auth + '.title';
             var authSubmit = auth + '.submit';

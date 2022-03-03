@@ -57,7 +57,6 @@
                         return $injector.invoke(directiveHandler, scope);
                     }, function (isAuthorized) {
 
-                        //remove watcher when we are authorized
                         if (isAuthorized) {
                             unbinder();
                         }

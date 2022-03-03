@@ -1,13 +1,6 @@
 (function (angular) {
     'use strict';
     angular
-    /**
-     * @ngdoc overview
-     * @name bettermarks.group
-     * @description
-     * The group module contains everything about school-classes and their members.
-     * In the config the module's state is added to the stateProvider.
-     */
         .module('bettermarks.group', [
             'templates-module',
             'bettermarks.list',

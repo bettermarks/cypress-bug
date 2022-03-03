@@ -3,13 +3,6 @@
 
     angular
 
-        /**
-         * @ngdoc overview
-         * @name bettermarks.teacher
-         * @description
-         * The teacher module containing the configuration of the stateProvider
-         * and the navi controller.
-         */
         .module('bettermarks.teacher', ['ui.router', 'oc.lazyLoad', 'bettermarks.user', 'bettermarks.util.filter'])
 
         .config(["$stateProvider", "UserData", function config($stateProvider, UserData) {

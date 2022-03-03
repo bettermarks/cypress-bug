@@ -13,11 +13,7 @@
             PAID: 'r:paid'
         })
 
-    /**
-     *
-     * @param UserData
-     * @constructor
-     */
+
         .service('UserService',
         ["$rootScope", "$q", "UserData", "AVAILABLE_USER_ROLE_NAMES", "$translate", "bmApi", "$window", "$inAppMode", function (
             $rootScope,
@@ -31,19 +27,7 @@
 
             var srv = this;
 
-            /**
-             * @param {string} feature
-             * @returns {boolean}
-             */
-            function featureEnabled(feature) {
-                return !!(UserData.features && UserData.features[feature]);
-            }
 
-            /**
-             * Use the constant AVAILABLE_USER_ROLE_NAMES for roleName
-             * @see module bettermarks.home in controller
-             * @param roleName
-             */
             srv.hasRole = function (roleName) {
                 if (!roleName) {
                     return false;

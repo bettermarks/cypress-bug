@@ -1,10 +1,3 @@
-/**
- * @ngdoc overview
- * @name bettermarks.modalBubble
- * @description
- * holds controllers and directives for the modal bubble
- */
-
 (function(angular) {
     'use strict';
     angular
@@ -43,15 +36,11 @@
 
             var resizeThrottle, resizeHandlerBound;
             function resizeHandler() {
-                // as modal.open is set directly in the template, the handler has to remove itself if there is no
-                // modal open anymore
                 if (!$scope.modal.open) {
                     $window.removeEventListener('resize', resizeHandler, false);
                     resizeHandlerBound = false;
                     return;
                 }
-
-                /*jshint expr: true */
                 resizeThrottle && $timeout.cancel(resizeThrottle);
                 resizeThrottle = $timeout(function() {
                     $scope.$apply(function() {
@@ -86,7 +75,6 @@
 
                 $scope.modal.open = !$scope.modal.open;
                 if(dosetStyles) {
-                    // we need on older ipad (ios7) and mac-osx(maverick) a little timeout to function as aspected
                     $timeout(function() {
                         $scope.$broadcast(BMEvents.ModalDialog.recalculateStyles);
                     });
@@ -138,9 +126,6 @@
                     parseInt($scope.modal.boxHeight, 10) :
                     Math.ceil(viewPortHeight * 0.8);
 
-                // this is way better readable
-                // https://github.com/jshint/jshint/issues/2528#issuecomment-118668152
-                /* jshint laxbreak: true */
                 var boxWidth = ($scope.modal.boxWidth && !dynamicWidth)
                   ? parseInt($scope.modal.boxWidth, 10)
                   : Math.min(viewPortWidth, 565);
@@ -256,35 +241,31 @@
             });
 
             $scope.$on(BMEvents.AnyBubble.openAnyBubble, function(event, bubbleId) {
-                // dont do anything if broadcasted the event myself in exportWorksheetBubble
                 if ($scope.bubbleId != bubbleId) {
                     $scope.worksheet.showCode = false;
                 }
             });
 
             function setExportStyles(openerElement) {
-                // calculation left
                 var boxOffsetLeft = openerElement.offset().left;
-                var boxWidth = 220; // hardcoded;
+                var boxWidth = 220;
                 var bubbleLeft = Math.floor(boxOffsetLeft - (boxWidth + 10));
                 bubbleLeft = bubbleLeft < 2 ? 2 : bubbleLeft;
 
-                // calculation top
                 var boxHeight = 230;
                 var bubbleTop = openerElement.offset().top;
                 var maxTop = angular.element('#content-wrap').offset().top;
 
                 if(bubbleTop < maxTop + 80) {
-                    bubbleTop = maxTop + 80; // where do the 80 come from?
+                    bubbleTop = maxTop + 80;
                 }
 
                 var viewPortHeight = angular.element('body').height();
                 if(bubbleTop > viewPortHeight + 80 - boxHeight) {
-                    bubbleTop = viewPortHeight + 80 - boxHeight; // where do the 80 come from?
+                    bubbleTop = viewPortHeight + 80 - boxHeight;
                 }
 
                 $scope.exportStyle = {
-                    // height: boxHeight + 'px',
                     width: boxWidth + 'px',
                     top: bubbleTop + 'px',
                     left: bubbleLeft + 'px'
@@ -330,7 +311,6 @@
             };
 
             $scope.$on(BMEvents.AnyBubble.openAnyBubble, function(event, worksheetOptionsBubbleId) {
-                // dont do anything if broadcasted the event myself in exportWorksheetBubble
                 if ($scope.worksheetOptionsBubbleId != worksheetOptionsBubbleId) {
                     $scope.worksheet.showOptionsBubble = false;
                 }
@@ -338,16 +318,11 @@
 
             function setExportStyles(openerElement) {
 
-
-                // Constants for left
-                var boxWidth = 220; // hardcoded;
-                // calculation left
+                var boxWidth = 220;
                 var boxOffsetLeft = openerElement.prop('offsetLeft');
                 var bubbleLeft = Math.floor(boxOffsetLeft - (boxWidth + 10));
                 bubbleLeft = bubbleLeft < 2 ? 2 : bubbleLeft;
 
-
-                // Constants for top
                 var childrenCount = openerElement.parent().find('.worksheet-option-item').length;
                 var BOX_HEADER_HEIGHT = 45;
                 var BOX_ITEM_HEIGHT = 39;
@@ -355,12 +330,7 @@
                 var viewPortHeight = angular.element('body').height();
                 var currentScrollPosition = openerElement.scrollParent().scrollTop();
                 var SPACING = 2;
-                /**
-                 * 23 is half of the "opener element" height
-                 * (the offset starts counting from the middle)
-                 */
                 var openerElementOffset = 23;
-                // calculation top
                 var idealPos = openerElement.offset().top - boxHeight/2;
                 var minPos = angular.element("#content-wrap").offset().top + openerElementOffset + SPACING;
                 var bubbleTop = Math.max(idealPos, minPos);
@@ -372,7 +342,6 @@
                 }
                 bubbleTop += currentScrollPosition;
                 $scope.exportStyle = {
-                    // height: boxHeight + 'px',
                     width: boxWidth + 'px',
                     top: bubbleTop + 'px',
                     left: bubbleLeft + 'px'
@@ -589,7 +558,6 @@
                 return {
                   rawFlashVars: true,
                   contentLocale: contentLocale,
-                  //testingruntime: "live",
                   userId: "0",
                   exerciseJsonUrlParams: [gId, aId, eNr].join(","),
                   hideCloseButtons: "false",
@@ -670,14 +638,12 @@
             }
 
             function setExportStyles(openerElement) {
-                // hard-coded static styles
                 var BOX_WIDTH = 220;
                 var BOX_LEFT = 8;
                 var BOX_HEIGHT = 120;
                 var NAVIGATION_BAR_HEIGHT = 60;
                 var SPACING = 2;
 
-                // calculation top
                 var FOLDER_LIST_CONTAINER_HEIGHT = openerElement.parent().parent().height();
 
                 var bubbleTop = openerElement.offset().top -
@@ -701,7 +667,6 @@
             }
 
             $scope.$on(BMEvents.AnyBubble.openAnyBubble, function(event, bubbleId) {
-                // dont do anything if broadcasted the event myself in exportWorksheetBubble
                 if ($scope.bubbleId !== bubbleId) {
                     $scope.showFolderOptionsBubble = false;
                 }
@@ -750,31 +715,25 @@
             }
 
             $scope.$on(BMEvents.AnyBubble.openAnyBubble, function (event, assignChapterOptionsBubbleId) {
-                // dont do anything if broadcasted the event myself in assignChapterBubble
+
                 if ($scope.assignChapterOptionsBubbleId !== assignChapterOptionsBubbleId) {
                     $scope.chapter.showAssignChapterBubble = false;
                 }
             });
 
             function setExportStyles(openerElement) {
-                // Constants for left
-                var boxWidth = 220; // hardcoded;
-
-                // calculation left
+                var boxWidth = 220; 
                 var boxOffsetLeft = openerElement.prop('offsetLeft');
                 var bubbleLeft = Math.floor(boxOffsetLeft - (boxWidth + 10));
                 bubbleLeft = bubbleLeft < 2 ? 2 : bubbleLeft;
 
-                // Constants for top
                 var BOX_HEADER_HEIGHT = 45;
                 var BOX_ITEM_HEIGHT = 39;
 
-                // Sum of height horizontal sub-menu Books & Selection toolbar
                 var TOP_OFFSET = 95;
                 var boxHeight = BOX_HEADER_HEIGHT + BOX_ITEM_HEIGHT;
                 var currentScrollPosition = openerElement.scrollParent().scrollTop();
 
-                // calculation top
                 var idealPos = openerElement.offset().top  + openerElement.height() - boxHeight / 2 - TOP_OFFSET;
                 idealPos += currentScrollPosition;
                 $scope.exportStyle = {

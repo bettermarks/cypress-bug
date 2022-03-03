@@ -12,12 +12,6 @@
             this.storage = {};
             this.hourKey = $filter('date')(new Date(), 'yyyyMMdd-HH');
 
-            /**
-             * save a value
-             * @param prefix
-             * @param key
-             * @param value
-             */
             this.put = function(prefix, key, value, sessionOnly, fullHourOnly) {
                 key = fullHourOnly ? (key + this.hourKey) : key;
                 if(!this.storage[prefix]) {
@@ -35,15 +29,8 @@
                 }
             };
 
-            /**
-             * get a value
-             * @param prefix
-             * @param key
-             * @returns {*}
-             */
             this.get = function(prefix, key, fullHourOnly) {
                 key = fullHourOnly ? (key + this.hourKey) : key;
-                // ToDo: remove hardcoded part for fix (#38534) bookList after 15.10.14
                 if(!this.storage[prefix] && prefix !== 'bookList') {
                     this.storage[prefix] = localStorageService.get(prefix);
                 }

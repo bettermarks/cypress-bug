@@ -55,7 +55,6 @@
           $scope,
           worksheetListLoader
         ) {
-            // this is a Interface for the different WorksheetList see $controller inheritance
 
             $scope.worksheets = {
                 list: []
@@ -63,8 +62,6 @@
 
             $scope.isTeacher = true
             $scope.assignData = {};
-
-            // load worksheets
             worksheetListLoader($scope.worksheets);
         }])
 
@@ -134,7 +131,6 @@
                 var selectedFolder = WorksheetFolderService.getSelectedFolder();
                 WorksheetService.worksheets.redeemCode($scope.formData.code, selectedFolder)
                     .then(function () {
-                        //QuickFix: without this line the worksheet list shows duplicated entry for a short time
                         $scope.worksheets.list = [];
                         getWorksheets($scope.worksheets, selectedFolder);
                         form.$setPristine();
@@ -155,8 +151,6 @@
             }
 
             function copyWorksheet(worksheet) {
-                // this is a workaround to protect special characters like ä, ö, ü, etc.
-                // from being displayed as html entity (see http://trac.bm.loc/ticket/42180)
                 var elem = document.createElement('textarea');
                 elem.innerHTML = $translate.instant('jsapp.worksheets.copyTitle', {title: worksheet.worksheetName});
 
@@ -216,8 +210,6 @@
         ) {
 
             if (!$stateParams.folderId) {
-                // Main route when clicking on the navigation icon.
-                // Fetch fresh folder list with an API call.
                 WorksheetFolderService.getFolderList();
                 WorksheetFolderService.getDefaultFolderList();
             } else {

@@ -1,13 +1,6 @@
 (function(angular) {
     'use strict';
     angular
-        /**
-         * @ngdoc overview
-         * @name bettermarks.auth
-         * @description
-         * This module handles the auth stuff for a logged in user. For example we are doing the dtdl couplingcode
-         * at this point
-         */
         .module('bettermarks.auth', [
             'templates-module',
             'bettermarks.api',

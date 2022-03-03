@@ -30,8 +30,6 @@
                 return folder ? folder.name : '';
             };
 
-            // Get the worksheet folder list and redirect to the last selected one
-            // or to the first in the list.
             folderService.getFolderList = function(folderId) {
                 return bmApi
                     .call('worksheetFolders')
@@ -105,26 +103,20 @@
 
             folderService.resetFolders = resetFolders;
 
-            // Route to a certain folder.
-            // if none is specified, the last selected folder is selected.
             folderService.goToFolder = function(folderId) {
                 if (folderId) {
                     selectedFolder = folderId;
                 }
 
-                // check if the selected folder exists
                 if (!folderExists(selectedFolder)) {
-                    // if the folder doesn't exist, reset and reload folders (corner case)
                     selectedFolder = null;
                     folderService.resetFolders();
                 } else if (
                     $state.current.name !== 'twoCol.manageWorksheets' ||
                     $stateParams.folderId !== selectedFolder
                 ) {
-                    // the selected folder exists, but the current route doesn't point to it
                     $state.transitionTo('twoCol.manageWorksheets', {folderId: selectedFolder});
                 }
-                // otherwise: we are on the selected folder, nothing to do.
             };
 
             folderService.create = function(folderName) {
